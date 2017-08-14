@@ -39,7 +39,7 @@ UV = parsed_json['current_observation'] ['UV']
 
 print "Your station ID: %s" % (station_id)
 
-print "Weather type: %s is %s" % (location, weather)
+print "Weather type in %s: %s" % (location, weather)
 
 print "Wind speed: %s mph, with gusts of up to: %s mph and it is blowing from the: %s. Windchill factor: %s c" % (wind_mph, wind_gust_mph, wind_dir, windchill_c)
 
@@ -49,7 +49,7 @@ print "Visibility: %s miles" % (visibility_mi)
 
 print "Current pressure: %s mb and pressure trend: %s" % (pressure_mb, pressure_trend)
 
-print "The precipitation (last hour) is %s mm" % (precip_1hr_metric)
+print "The precipitation (last hour): %s mm" % (precip_1hr_metric)
 
 print "Solar radiation: %s and UV index: %s" % (solarradiation, UV)
 
