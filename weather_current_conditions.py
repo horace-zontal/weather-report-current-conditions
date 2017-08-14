@@ -37,20 +37,20 @@ solarradiation = parsed_json['current_observation'] ['solarradiation']
 
 UV = parsed_json['current_observation'] ['UV']
 
-print "Your station ID is %s" % (station_id)
+print "Your station ID: %s" % (station_id)
 
-print "The weather type in %s is %s" % (location, weather)
+print "Weather type: %s is %s" % (location, weather)
 
-print "The wind speed is %s mph, with gusts of up to %s mph and it is blowing from the %s.  The windchill factor is %s c" % (wind_mph, wind_gust_mph, wind_dir, windchill_c)
+print "Wind speed: %s mph, with gusts of up to: %s mph and it is blowing from the: %s. Windchill factor: %s c" % (wind_mph, wind_gust_mph, wind_dir, windchill_c)
 
-print "The current temprature is %s c and it feels like %s c" % (temp_c, feelslike_c)
+print "Current temprature:%s c and it feels like %s c" % (temp_c, feelslike_c)
 
-print "Visibility is %s miles" % (visibility_mi)
+print "Visibility: %s miles" % (visibility_mi)
 
-print "Current pressure is %s mb and the pressure trend is %s" % (pressure_mb, pressure_trend)
+print "Current pressure: %s mb and pressure trend: %s" % (pressure_mb, pressure_trend)
 
 print "The precipitation (last hour) is %s mm" % (precip_1hr_metric)
 
-print "Solar radiation factor is %s and the UV index is %s" % (solarradiation, UV)
+print "Solar radiation: %s and UV index: %s" % (solarradiation, UV)
 
 f.close()
